@@ -12,7 +12,8 @@ function DoorsOfBath(header_selector, info_selector, doors_selector) {
 
 DoorsOfBath.prototype.init = function() {
 	// Fix height of page to height of the window
-	document.getElementsByTagName('body')[0].style.height = window.innerHeight + "px";
+	// document.getElementsByTagName('body')[0].style.height = window.innerHeight + "px";
+	
 	
 	// Set width of doors UL to account for the number of images.  This gives us the scrolling.
 	var door_width = document.querySelectorAll('.doors img').length * document.querySelector('.doors img').clientWidth;

@@ -47,7 +47,7 @@ body {
 	font-style: italic;
 	margin: 0;
 	overflow: scroll-x;
-	width: 2000px;
+	/*width: 2000px;*/
 }
 
 a {
@@ -60,7 +60,8 @@ a {
 
 .footer-container {
 	position: absolute;
-	bottom: 50px;
+	bottom: 10px;
+	left: 10px;
 	font-style: italic;
 }
 
@@ -77,15 +78,15 @@ a {
 
 .title {
 	position: fixed;
-	max-width: 560px;
+	max-width: 295px;
 	text-align: center;
-	top: 40%;
-	left: 35%;
+	top: 30%;
+	left: 5%;
 }
 
 .title h1 {
 	font-weight: normal;
-	font-size: 70px;
+	font-size: 30px;
 	letter-spacing: 5px;
 	margin: 30px 0;
 	text-transform: uppercase;
@@ -117,17 +118,91 @@ a {
 
 .title h1 span {
 	font-family: 'coneria';
-	font-size: 30px;
+	font-size: 13px;
 	position: relative;
 	text-transform: lowercase;
-	top: -15px;
+	top: -7px;
 }
 
 .title p {
 	font-family: 'vollkornregular', Georgia, Times, "Times New Roman", serif;
 	font-style: normal;
-	font-size: 16px;
+	font-size: 12px;
 	letter-spacing: 0.8px;
-	line-height: 2.2;
+	line-height: 1.6;
 	text-shadow: 0 0 50px #342e25;
+}
+
+@media only screen and (min-width: 400px) { 
+
+	.title {
+		left: 25%;
+	}
+}
+
+@media only screen and (min-width: 650px) {
+
+	.title {
+		max-width: 430px;
+		left: 20%;
+	}
+
+	.title h1 {
+		font-size: 50px;
+	}
+
+	.title h1 span {
+		font-size: 21px;
+		top: -12px;
+	}
+
+	.title p {
+		font-size: 14px;
+		line-height: 1.8;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+
+	.title {
+		left: 30%;
+		max-width: 490px;
+	}
+
+	.title h1 {
+		font-size: 60px;
+	}
+
+	.title h1 span {
+		font-size: 24px;
+		top: -13px;
+	}
+
+	.title p {
+		font-size: 14px;
+		line-height: 1.8;
+	}
+
+}
+
+@media only screen and (min-width: 1400px) {
+
+	.title {
+		max-width: 550px;
+		left: 35%;
+	}
+
+	.title h1 {
+		height: 70px;
+	}
+
+	.title h1 span {
+		font-size: 26px;
+		top: -15px;
+	}
+
+	.title p {
+		font-size: 16px;
+		line-height: 2.2;
+	}
 }
