@@ -10,10 +10,7 @@ function DoorsOfBath(header_selector, info_selector) {
 }
 
 DoorsOfBath.prototype.init = function() {
-
 	this.title.style.left = window.innerWidth * 1.5/5  + "px";
-	//this.title.style.top  = window.innerHeight * 2/5 + "px";
-
 };
 
 DoorsOfBath.prototype.scroll = function() {
