@@ -23,6 +23,20 @@
 
 }
 
+@-webkit-keyframes shimmer {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+  	opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 ::-webkit-scrollbar { 
     display: none; 
 }
@@ -66,23 +80,6 @@ body {
 	top: 40%;
 }
 
-@-webkit-keyframes shimmer {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-  	opacity: 0.2;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.info img { 
-}
-
 .title h1 {
 	font-weight: normal;
 	font-size: 70px;
@@ -109,7 +106,6 @@ body {
 	vertical-align: top;
 	animation: shimmer 5s infinite;
   	-webkit-animation: shimmer 5s infinite;
-
 }
 
 .title h1 span {
