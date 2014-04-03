@@ -49,6 +49,10 @@ body {
 	width: 19121px;
 }
 
+a {
+	color: white;
+}
+
 .main {
 	position: relative;
 }
