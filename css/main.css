@@ -47,7 +47,6 @@ body {
 	font-style: italic;
 	margin: 0;
 	overflow: scroll-x;
-	/*width: 2000px;*/
 }
 
 a {
@@ -109,6 +108,11 @@ a {
 	font-style: normal;
 	letter-spacing: 2px;
 	text-transform: uppercase;
+	animation: shimmer 3s infinite;
+  	-webkit-animation: shimmer 3s infinite;
+}
+
+.title .arrow {
 	animation: shimmer 3s infinite;
   	-webkit-animation: shimmer 3s infinite;
 }
