@@ -6,19 +6,18 @@ function DoorsOfBath(header_selector, info_selector, doors_selector) {
 	this.init();
 
 	window.addEventListener('resize', this.init.bind(this), false);
-	window.addEventListener('scroll', this.scroll.bind(this), false);
 	window.addEventListener('load', this.init.bind(this), false);
+	window.addEventListener('scroll', this.scroll.bind(this), false);
 };
 
 DoorsOfBath.prototype.init = function() {
-	// Fix height of page to height of the window
-	// document.getElementsByTagName('body')[0].style.height = window.innerHeight + "px";
-	
-	
+
 	// Set width of doors UL to account for the number of images.  This gives us the scrolling.
-	var door_width = document.querySelectorAll('.doors img').length * document.querySelector('.doors img').clientWidth;
+	var door_img = document.querySelector('.doors img');
+	var door_width = document.querySelectorAll('.doors img').length * door_img.clientWidth;
 	if (door_width > 0) {
 		this.doors.style.width = door_width + "px";
+		this.doors.style.height = door_img.clientHeight + "px";
 	}
 
 	// Set image height to fill screen
@@ -32,7 +31,7 @@ DoorsOfBath.prototype.init = function() {
 DoorsOfBath.prototype.scroll = function() {
 
 	// Hide the info text once you start scrolling
-	if (window.scrollX > window.innerWidth / 3) {
+	if (window.scrollX > window.innerWidth / 3 ) {
 		this.info.classList.add('hide');
 	} else {
 		this.info.classList.remove('hide');

@@ -68,6 +68,7 @@ a {
 .doors { 
 	font-size: 0;
 	margin: 0;
+	overflow-y: hidden;
 	padding: 0;
 }
 
