@@ -16,7 +16,8 @@ DoorsOfBath.prototype.init = function() {
 	var door_img = document.querySelector('.doors img');
 	var door_width = document.querySelectorAll('.doors img').length * door_img.clientWidth;
 	if (door_width > 0) {
-		this.doors.style.width = door_width + "px";
+		// Add 10px to account for scrollbars in firefox
+		this.doors.style.width = door_width + 10 + "px";
 		this.doors.style.height = door_img.clientHeight + "px";
 	}
 
