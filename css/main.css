@@ -73,7 +73,6 @@ a {
 
 .doors li { 
 	display: inline-block;
-	float: left;
 }
 
 .title {
@@ -105,7 +104,6 @@ a {
 .title p.scroll {
 	display: inline-block;
 	font-family: 'vollkornregular', Georgia, Times, "Times New Roman", serif;
-	font-style: normal;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	animation: shimmer 3s infinite;
@@ -115,9 +113,6 @@ a {
 .title .arrow {
 	animation: shimmer 3s infinite;
   	-webkit-animation: shimmer 3s infinite;
-}
-
-.title .arrow {
 	vertical-align: middle;
 }
 
@@ -130,11 +125,8 @@ a {
 }
 
 .title p {
-	font-family: 'vollkornregular', Georgia, Times, "Times New Roman", serif;
-	font-style: normal;
-	font-size: 12px;
+	font: normal 12px/1.6 'vollkornregular', Georgia, Times, "Times New Roman", serif;	
 	letter-spacing: 0.8px;
-	line-height: 1.6;
 	text-shadow: 0 0 50px #342e25;
 }
 
@@ -148,7 +140,7 @@ a {
 @media only screen and (min-width: 650px) {
 
 	.title {
-		max-width: 430px;
+		max-width: 440px;
 		left: 20%;
 	}
 
